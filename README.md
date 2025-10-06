@@ -4,9 +4,26 @@ Autograded exercises for ComIT Web Development with Python (Django)
 ### About this repo
 
 
-Here you will find code challenges, to polish up your python skills. I'm a DevOps guy and these exercises will imitate early stages in the SDLC for real life developer activities (on a small scale). After you write your code and do a PR (pull request), GitHub Actions will launch an Ubuntu Virtual Machine that runs your code against a battery of tests. If all is good you will see a green check mark otherwise it will show you a red X. You can explore what went wrong and what passed. 
+Here you will find code challenges to polish up your python skills. These exercises will imitate early stages in the Software Development Life Cycle (SDLC) for real life developer activities (on a small scale). After you write and test your code and do a PR (pull request), GitHub Actions will launch a Virtual Machine that runs your code against a battery of tests. If all is good you will see a green check mark otherwise it will show you a red X. You can explore what went wrong and what passed. 
+
+checkout the `tests` folder to have a better idea of what you code has to accomplish.
+
 
 ---
+### Order of exercises
+
+You can complete any exercise you want, but to submit a pull request you have to complete the exercises in order, since tests are sequencial. If one fails the next ones don't execute. Test your code locally as noted below. 
+ 
+1. fibonacci.py
+2. bmi_calculator.py
+3. test_two_number_sum.py
+4. sorted_square_array.py
+5. validate_subsequence.py
+
+To get the new exercises: `sync fork`  button on GitHub or `git pull` in your CLI. Use Slack for your questions, and paste screenshots in case of errors in the `#practice` channel.
+
+---
+
 
 ### Test your local repo
 
@@ -14,9 +31,22 @@ After Part 3 below, you can check your code locally before pushing with:
 
 ```BASH
 $ python -m unittest ./tests/test_fibonacci.py -v
+$ python -m unittest ./tests/test_bmi_calculator.py -v
+$ python -m unittest ./tests/test_two_number_sum.py -v 
+$ python -m unittest ./tests/test_sorted_square_array.py -v
+$ python -m unittest ./tests/test_validate_subsequence.py -v
 ```
 
 If all tests pass you can continue with Part 4.
+
+
+Additionally, some tests are written inside the exercise files at the end as print statements. Execute the files directly:
+
+```BASH
+$ python two_number_sum.py 
+$ python sorted_square_array.py 
+$ python validate_subsequence.py
+```
 
 ---
 
